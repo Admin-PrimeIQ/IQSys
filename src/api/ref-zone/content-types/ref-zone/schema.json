@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_zones",
+  "info": {
+    "singularName": "ref-zone",
+    "pluralName": "ref-zones",
+    "displayName": "refZone"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unit_housings",
+  "info": {
+    "singularName": "unit-housing",
+    "pluralName": "unit-housings",
+    "displayName": "unitHousing"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "units": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unit.unit",
+      "mappedBy": "unit_housings"
+    }
+  }
+}

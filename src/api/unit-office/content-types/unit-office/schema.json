@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unit_offices",
+  "info": {
+    "singularName": "unit-office",
+    "pluralName": "unit-offices",
+    "displayName": "unitOffice"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unit.unit"
+    },
+    "m2_sin_parqueo_usd": {
+      "type": "decimal"
+    },
+    "valor_propiedad_sin_parqueo_usd": {
+      "type": "decimal"
+    },
+    "leyenda_cantidad_empleados": {
+      "type": "string"
+    },
+    "leyenda_cantidad_m2": {
+      "type": "string"
+    },
+    "leyenda_tamano_cantidad_empleados": {
+      "type": "string"
+    },
+    "leyenda_tamano_m2": {
+      "type": "string"
+    },
+    "clasificacion_oficina": {
+      "type": "string"
+    },
+    "clasificacion_general_por_tamano": {
+      "type": "string"
+    }
+  }
+}

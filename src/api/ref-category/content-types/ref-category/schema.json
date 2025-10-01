@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_categories",
+  "info": {
+    "singularName": "ref-category",
+    "pluralName": "ref-categories",
+    "displayName": "refCategory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

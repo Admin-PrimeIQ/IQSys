@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_parking_types",
+  "info": {
+    "singularName": "ref-parking-type",
+    "pluralName": "ref-parking-types",
+    "displayName": "refParkingType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

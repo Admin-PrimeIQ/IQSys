@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_departments",
+  "info": {
+    "singularName": "ref-department",
+    "pluralName": "ref-departments",
+    "displayName": "refDepartment"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

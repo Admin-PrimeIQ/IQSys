@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_financing_params",
+  "info": {
+    "singularName": "project-financing-param",
+    "pluralName": "project-financing-params",
+    "displayName": "projectFinancingParam"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "enganche_pct": {
+      "type": "decimal"
+    },
+    "enganche_fraccionado": {
+      "type": "boolean",
+      "default": false
+    },
+    "enganche_fraccionado_fha": {
+      "type": "decimal"
+    },
+    "cuotas_enganche_fracc_otros_bancos": {
+      "type": "decimal"
+    },
+    "enganche_minimo_fha": {
+      "type": "decimal"
+    },
+    "enganche_minimo_bancos": {
+      "type": "decimal"
+    },
+    "max_loan_term_years_fha": {
+      "type": "integer"
+    },
+    "max_loan_term_years_banks": {
+      "type": "integer"
+    },
+    "max_loan_term_years_owner": {
+      "type": "integer"
+    }
+  }
+}

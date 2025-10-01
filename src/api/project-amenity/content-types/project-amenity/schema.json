@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_amenities",
+  "info": {
+    "singularName": "project-amenity",
+    "pluralName": "project-amenities",
+    "displayName": "projectAmenity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "project_amenities"
+    },
+    "ref_amenity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-amenity.ref-amenity"
+    }
+  }
+}

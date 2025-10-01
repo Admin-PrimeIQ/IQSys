@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_unit_type_unit_industrials",
+  "info": {
+    "displayName": "unitIndustrial"
+  },
+  "options": {},
+  "attributes": {
+    "units": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unit.unit",
+      "mappedBy": "unit_industrials"
+    },
+    "fase": {
+      "type": "string"
+    },
+    "sector_cluster": {
+      "type": "string"
+    },
+    "ref_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-category.ref-category"
+    },
+    "tamano_terreno_m2": {
+      "type": "decimal"
+    },
+    "tamano_terreno_v2": {
+      "type": "decimal"
+    },
+    "tamano_bodega_almacenamiento_m2": {
+      "type": "decimal"
+    },
+    "tamano_mezzanine_m2": {
+      "type": "decimal"
+    },
+    "area_carga_m2": {
+      "type": "decimal"
+    },
+    "ancho_1_m": {
+      "type": "decimal"
+    },
+    "fondo_1_m": {
+      "type": "decimal"
+    },
+    "alto_m": {
+      "type": "decimal"
+    },
+    "cantidad_banos": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

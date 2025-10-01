@@ -1,0 +1,137 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cod_proyecto": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "ref_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-category.ref-category"
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "uso": {
+      "type": "string"
+    },
+    "fase": {
+      "type": "string"
+    },
+    "ref_developer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-developer.ref-developer"
+    },
+    "fecha_recoleccion": {
+      "type": "date"
+    },
+    "fecha_inicio": {
+      "type": "date"
+    },
+    "fecha_entrega": {
+      "type": "date"
+    },
+    "meses_de_comercializacion": {
+      "type": "integer"
+    },
+    "ref_department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-department.ref-department"
+    },
+    "ref_municipality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-municipality.ref-municipality"
+    },
+    "ref_zone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-zone.ref-zone"
+    },
+    "latitud": {
+      "type": "decimal"
+    },
+    "longitud": {
+      "type": "decimal"
+    },
+    "total_m2": {
+      "type": "decimal"
+    },
+    "unidades_disponibles": {
+      "type": "integer"
+    },
+    "m2_disponibles": {
+      "type": "decimal"
+    },
+    "parqueos_visita": {
+      "type": "integer"
+    },
+    "parqueos_para_venta": {
+      "type": "integer"
+    },
+    "total_parqueos_proyecto": {
+      "type": "integer"
+    },
+    "tamano_promedio_m2": {
+      "type": "decimal"
+    },
+    "precio_prom_m2": {
+      "type": "decimal"
+    },
+    "cuota_promedio": {
+      "type": "decimal"
+    },
+    "ingresos_promedio": {
+      "type": "decimal"
+    },
+    "ref_market": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-market.ref-market"
+    },
+    "showroom": {
+      "type": "boolean",
+      "default": false
+    },
+    "casa_modelo": {
+      "type": "boolean",
+      "default": false
+    },
+    "updated_on": {
+      "type": "datetime"
+    },
+    "project_amenities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-amenity.project-amenity",
+      "mappedBy": "project"
+    },
+    "project_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-service.project-service",
+      "mappedBy": "project"
+    },
+    "units": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::unit.unit",
+      "mappedBy": "project"
+    }
+  }
+}

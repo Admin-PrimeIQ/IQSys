@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_services",
+  "info": {
+    "singularName": "project-service",
+    "pluralName": "project-services",
+    "displayName": "projectService"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "project_services"
+    },
+    "ref_service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-service.ref-service"
+    }
+  }
+}

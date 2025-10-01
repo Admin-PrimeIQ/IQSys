@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_markets",
+  "info": {
+    "singularName": "ref-market",
+    "pluralName": "ref-markets",
+    "displayName": "refMarket"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

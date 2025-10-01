@@ -1,0 +1,135 @@
+{
+  "kind": "collectionType",
+  "collectionName": "units",
+  "info": {
+    "singularName": "unit",
+    "pluralName": "units",
+    "displayName": "unit"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "units"
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "num_unidad": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "nivel": {
+      "type": "string"
+    },
+    "area_balcon_terraza_m2": {
+      "type": "decimal"
+    },
+    "area_total_m2": {
+      "type": "decimal"
+    },
+    "banios": {
+      "type": "integer"
+    },
+    "cant_parqueos": {
+      "type": "integer"
+    },
+    "tamano_parqueo_m2": {
+      "type": "decimal"
+    },
+    "precio_parqueo_adicional_usd": {
+      "type": "decimal"
+    },
+    "precio_total_gtq": {
+      "type": "decimal"
+    },
+    "precio_total_usd": {
+      "type": "decimal"
+    },
+    "precio_sin_iva_usd": {
+      "type": "decimal"
+    },
+    "precio_sin_iva_gtq": {
+      "type": "decimal"
+    },
+    "precio_m2_usd": {
+      "type": "decimal"
+    },
+    "precio_v2_usd": {
+      "type": "decimal"
+    },
+    "precio_renta_gtq": {
+      "type": "decimal"
+    },
+    "precio_renta_usd": {
+      "type": "decimal"
+    },
+    "renta_sin_iva_usd": {
+      "type": "decimal"
+    },
+    "renta_sin_iva_gtq": {
+      "type": "decimal"
+    },
+    "renta_m2_usd": {
+      "type": "decimal"
+    },
+    "renta_v2_usd": {
+      "type": "decimal"
+    },
+    "mantenimiento_m2": {
+      "type": "decimal"
+    },
+    "mantenimiento_v2": {
+      "type": "decimal"
+    },
+    "absorcion_unitaria": {
+      "type": "decimal"
+    },
+    "absorcion_m2": {
+      "type": "decimal"
+    },
+    "absorcion_v2": {
+      "type": "decimal"
+    },
+    "fecha_recoleccion": {
+      "type": "date"
+    },
+    "fecha_inicio": {
+      "type": "date"
+    },
+    "nse": {
+      "type": "string"
+    },
+    "unit_housings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unit-housing.unit-housing",
+      "inversedBy": "units"
+    },
+    "unit_industrials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unit-industrial.unit-industrial",
+      "inversedBy": "units"
+    },
+    "ref_parking_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ref-parking-type.ref-parking-type"
+    },
+    "unitType": {
+      "type": "dynamiczone",
+      "components": [
+        "unit-type.unit-office",
+        "unit-type.unit-industrial"
+      ]
+    }
+  }
+}

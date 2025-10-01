@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_municipalities",
+  "info": {
+    "singularName": "ref-municipality",
+    "pluralName": "ref-municipalities",
+    "displayName": "refMunicipality"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

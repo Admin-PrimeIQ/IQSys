@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_bank_participations",
+  "info": {
+    "singularName": "project-bank-participation",
+    "pluralName": "project-bank-participations",
+    "displayName": "projectBankParticipation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "ref_bank": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ref-bank.ref-bank"
+    },
+    "percentage": {
+      "type": "decimal"
+    }
+  }
+}

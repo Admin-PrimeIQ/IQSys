@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ref_amenities",
+  "info": {
+    "singularName": "ref-amenity",
+    "pluralName": "ref-amenities",
+    "displayName": "refAmenity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}
